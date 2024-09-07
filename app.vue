@@ -50,7 +50,7 @@
           Работаем на языках JS, TS, Python.<br/>
           Пишими телеграм ботов, фронт, бэк.<br/>
           Инструменты и язык выбираем от того чем будем заниматься.<br/>
-          Скорее всгео будем работать с такими инструментами как Vue и Nuxt и их экосистема, Nest.js, Three.js, Dgango, Flask, Aiogram, FastAPI. SQLLite3, PostgreSQL<br/>
+          Скорее всгео будем работать с такими инструментами как Vue и Nuxt и их экосистема, Nest.js, Three.js, Dgango, Flask, Aiogram, FastAPI. SQLLite3, PostgreSQL, git<br/>
           Раберем немного теорию: Декларативный/иперативный подход, ООП/фнкциональщина, Паттерны в программировании, REST, SOLID, CRUD.<br/>
           Я считаю что программирование это прикладная наука, поэтому ы будем каждый термин разбирать в коде, с первого дня поставим себе цель написать ту программу которую вы хотите,
           в первый же урок мы гапишем работчю миним рпрограмму которую будем в дальнейшем улучшать и приводить к готовому виду.
@@ -59,8 +59,8 @@
     <div class="main__footer">
       <UDivider label="Записаться на курс" class="mb-10" />
         <UCard class="card-info">
-          Для записи на курс и для получения более подробной информации заполните <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSc9KgugQjrS0S76Vkxn19G0TIcWvFqoBhwm1hQjppGT_MLRsQ/viewform?usp=sf_link">анкету</a>
-          или же напишите мне в телеграм https://t.me/fedor11235b
+          Для записи на курс и для получения более подробной информации заполните <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSc9KgugQjrS0S76Vkxn19G0TIcWvFqoBhwm1hQjppGT_MLRsQ/viewform?usp=sf_link" target="_blank" >анкету</a>
+          или же напишите мне в <a class="link" href="https://t.me/fedor11235b" target="_blank" >телеграм</a>
         </UCard>
     </div>
 
@@ -74,25 +74,33 @@ import avatar from "@/assets/img/avatar.jpg"
 
 <style lang="scss">
 .main {
-  padding: 0 40px;
   height: max(100vh, auto);
   &__header {
-    padding: 80px 0;
+    background-color: aliceblue;
+    padding: 80px 40px;
   }
   &__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    .card-info {
-      width: 100%;
+    padding: 40px 40px;
+    background: linear-gradient(90deg, white, aliceblue 100%);
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
     }
   }
   &__footer {
-    padding: 80px 0;
-    .link {
-      color: blue;
-      text-decoration: underline;
-    }
+    background-color: aliceblue;
+    padding: 80px 40px;
   }
+}
+
+.card-info {
+  width: 100%;
+  background: linear-gradient(90deg, aliceblue, white 100%);
+}
+.link {
+  color: blue;
+  text-decoration: underline;
 }
 </style>
